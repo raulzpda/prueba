@@ -35,6 +35,10 @@
     clear: both;
 }
 
+#body{
+    background-image: url("../img/pattern.png");
+}
+
 body{
     background-image: url("../img/pattern.png");
 }
