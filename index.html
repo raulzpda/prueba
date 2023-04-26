@@ -300,26 +300,7 @@
             
         </div>
    <!--inicio de codigo para el  Embeddable Framework-->  
-      function clickToDial () {
-        document.getElementById("softphone").contentWindow.postMessage(JSON.stringify({
-            type: 'clickToDial',
-            data: { number: $scope.telefono, autoPlace: true }
-        }), "*");
-    }
-    function wrapupConversation () {
-        var d = { tipo: "wrapup", wrapup: 'Aclaracion', id: "1234567890" };
-        document.getElementById("softphone").contentWindow.postMessage(JSON.stringify({
 
-            type: 'sendCustomNotification',
-
-            data: { tipo: "finalizarLlamada", wrapup: 'Aclaracion', id: "1234567890" }
-
-        }), "*");
-        document.getElementById("softphone").contentWindow.postMessage(JSON.stringify({
-            type: 'sendCustomNotification',
-            data: d
-        }), "*");
-    }
    <!--fin de codigo para el  Embeddable Framework-->      
       
     </footer>
